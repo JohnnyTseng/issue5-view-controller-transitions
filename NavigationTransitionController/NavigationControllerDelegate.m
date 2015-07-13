@@ -30,6 +30,9 @@
 - (void)pan:(UIPanGestureRecognizer*)recognizer
 {
     UIView* view = self.navigationController.view;
+    CGPoint translation = [recognizer translationInView:view];
+    CGFloat d = fabs(translation.x / CGRectGetWidth(view.bounds));
+    
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         CGPoint location = [recognizer locationInView:view];
         if (location.x <  CGRectGetMidX(view.bounds) && self.navigationController.viewControllers.count > 1) { // left half
@@ -41,7 +44,7 @@
         CGFloat d = fabs(translation.x / CGRectGetWidth(view.bounds));
         [self.interactionController updateInteractiveTransition:d];
     } else if (recognizer.state == UIGestureRecognizerStateEnded) {
-        if ([recognizer velocityInView:view].x > 0) {
+        if (d > 0.5) {
             [self.interactionController finishInteractiveTransition];
         } else {
             [self.interactionController cancelInteractiveTransition];

@@ -23,6 +23,7 @@
 		83C1B6FF1805FB3100A9DD41 /* NavigationTransitionControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C1B6FE1805FB3100A9DD41 /* NavigationTransitionControllerTests.m */; };
 		83C1B70A1805FB5A00A9DD41 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C1B7091805FB5A00A9DD41 /* NavigationControllerDelegate.m */; };
 		83C1B70D1805FD8600A9DD41 /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C1B70C1805FD8600A9DD41 /* Animator.m */; };
+		B207F8321B541B7600292808 /* HelloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B207F8311B541B7600292808 /* HelloViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		83C1B7091805FB5A00A9DD41 /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
 		83C1B70B1805FD8600A9DD41 /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
 		83C1B70C1805FD8600A9DD41 /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		B207F8301B541B7600292808 /* HelloViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloViewController.h; sourceTree = "<group>"; };
+		B207F8311B541B7600292808 /* HelloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +128,12 @@
 				83C1B6E91805FB3100A9DD41 /* ViewController.m */,
 				83C1B70B1805FD8600A9DD41 /* Animator.h */,
 				83C1B70C1805FD8600A9DD41 /* Animator.m */,
-				83C1B6EB1805FB3100A9DD41 /* Images.xcassets */,
-				83C1B6DA1805FB3100A9DD41 /* Supporting Files */,
+				B207F8301B541B7600292808 /* HelloViewController.h */,
+				B207F8311B541B7600292808 /* HelloViewController.m */,
 				83C1B7081805FB5A00A9DD41 /* NavigationControllerDelegate.h */,
 				83C1B7091805FB5A00A9DD41 /* NavigationControllerDelegate.m */,
+				83C1B6EB1805FB3100A9DD41 /* Images.xcassets */,
+				83C1B6DA1805FB3100A9DD41 /* Supporting Files */,
 			);
 			path = NavigationTransitionController;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				83C1B70D1805FD8600A9DD41 /* Animator.m in Sources */,
 				83C1B70A1805FB5A00A9DD41 /* NavigationControllerDelegate.m in Sources */,
 				83C1B6EA1805FB3100A9DD41 /* ViewController.m in Sources */,
+				B207F8321B541B7600292808 /* HelloViewController.m in Sources */,
 				83C1B6E41805FB3100A9DD41 /* AppDelegate.m in Sources */,
 				83C1B6E01805FB3100A9DD41 /* main.m in Sources */,
 			);
@@ -472,6 +478,7 @@
 				83C1B7041805FB3100A9DD41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83C1B7051805FB3100A9DD41 /* Build configuration list for PBXNativeTarget "NavigationTransitionControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +487,7 @@
 				83C1B7071805FB3100A9DD41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
